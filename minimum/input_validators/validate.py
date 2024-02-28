@@ -4,7 +4,7 @@ import re
 
 line = sys.stdin.readline()
 
-if not re.match(r"(0|[1-9][0-9]*]) (0|[1-9][0-9]*])\n", line):
+if not re.match(r"(0|[1-9][0-9]*) (0|[1-9][0-9]*)\r?\n", line):
     sys.exit(43)
 
 n, m = map(int, line.split())
